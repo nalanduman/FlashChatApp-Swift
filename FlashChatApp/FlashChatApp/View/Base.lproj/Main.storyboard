@@ -31,7 +31,7 @@
                                     <segue destination="gjN-Xr-NIR" kind="show" identifier="GoToLogin" id="hKa-Jz-D1m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSw-ih-U6Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSw-ih-U6Q" customClass="CLTypingLabel" customModule="CLTypingLabel">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Vdi-6I-Lgx"/>
@@ -73,7 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Z9P-vj-Wm5"/>
                     <connections>
-                        <outlet property="titleLabel" destination="wSw-ih-U6Q" id="ggF-Zf-xPH"/>
+                        <outlet property="titleLabel" destination="wSw-ih-U6Q" id="AN8-N3-F0u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
