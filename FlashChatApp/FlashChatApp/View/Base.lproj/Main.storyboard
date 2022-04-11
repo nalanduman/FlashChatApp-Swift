@@ -122,6 +122,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="Uq4-Q2-Na7" eventType="touchUpInside" id="b3E-fK-1Ss"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="AQp-dD-CG3">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -163,6 +166,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Pbu-7x-dnv"/>
                     <connections>
+                        <outlet property="emailTextField" destination="yJa-W8-xhO" id="L7z-xQ-eax"/>
+                        <outlet property="passwordTextField" destination="Mdw-Yq-dke" id="bGK-Ok-VhM"/>
                         <segue destination="UXU-js-wBC" kind="show" identifier="RegisterToChat" id="jJ5-W4-Z2w"/>
                     </connections>
                 </viewController>
@@ -221,6 +226,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="gjN-Xr-NIR" eventType="touchUpInside" id="WFG-eH-47d"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -253,6 +261,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nwc-OT-Qcz"/>
                     <connections>
+                        <outlet property="emailTextField" destination="LWG-jv-Ub7" id="0wy-IT-faz"/>
+                        <outlet property="passwordTextField" destination="W3c-ne-nV5" id="fL3-uJ-s01"/>
                         <segue destination="UXU-js-wBC" kind="show" identifier="LoginToChat" id="eIP-x1-Q1m"/>
                     </connections>
                 </viewController>
@@ -304,6 +314,9 @@
                                         </constraints>
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="UXU-js-wBC" eventType="touchUpInside" id="YjZ-7c-L6b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BrandPurple"/>
@@ -329,7 +342,17 @@
                             <constraint firstItem="6Yy-VD-lpN" firstAttribute="leading" secondItem="7Ei-4n-fje" secondAttribute="leading" id="ufP-oB-xsd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cMB-YB-ZBR"/>
+                    <navigationItem key="navigationItem" id="cMB-YB-ZBR">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="rEJ-SW-e4f">
+                            <connections>
+                                <action selector="logOutPressed:" destination="UXU-js-wBC" id="HUw-Ps-nhW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageTextField" destination="qbB-w4-ZIp" id="3QI-RJ-NhJ"/>
+                        <outlet property="tableView" destination="6Yy-VD-lpN" id="AaD-9z-v4G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTZ-Xm-df4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
