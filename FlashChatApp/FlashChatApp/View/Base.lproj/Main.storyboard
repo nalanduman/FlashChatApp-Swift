@@ -31,7 +31,7 @@
                                     <segue destination="gjN-Xr-NIR" kind="show" identifier="GoToLogin" id="hKa-Jz-D1m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSw-ih-U6Q" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️FlashChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSw-ih-U6Q">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Vdi-6I-Lgx"/>
@@ -354,11 +354,6 @@
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="wSw-ih-U6Q">
-            <size key="intrinsicContentSize" width="307.5" height="60"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="jJ5-W4-Z2w"/>
     </inferredMetricsTieBreakers>

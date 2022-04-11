@@ -6,7 +6,7 @@ target 'FlashChatApp' do
   use_frameworks!
 
   # Pods for FlashChatApp
-	pod 'CLTypingLabel'
+	#pod 'CLTypingLabel'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
 end
